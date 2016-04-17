@@ -25,17 +25,48 @@
 	 $(document).ready( function() {
 				var graphinstance = new Graph( $('#mygraph') );
 
-				var data = {
-				  x: 0.5,
-				  dx: 0.2,
-				  y: []
-				};
-				for ( var i = 1, l = 30; i < l; i += 1 ) {
-				  data.y.push( Math.sin( i * 0.2 + 0.5 ) );
-				}
+				graphinstance.getXAxis().forceMin( 0 );
+	graphinstance.getXAxis().forceMax( 50 );
 
-				graphinstance.newSerie( "serieTest" ).setLabel( "My serie" ).autoAxis().setData( data ).setMarkers();
+	graphinstance.getYAxis().forceMin( 0 );
+	graphinstance.getYAxis().forceMax( 50 );
 
-				graphinstance.redraw();
-				graphinstance.drawSeries();
+	graphinstance.updateAxes();
+
+	var shape = graphinstance.newShape( {
+	  type: 'peakboundariescenter',
+	  pos: {
+	    x: 10,
+	    y: 10
+	  },
+	  fillColor: 'rgba(200, 100, 100, 0.5)',
+	  strokeColor: 'black',
+	  locked: false,
+	  selectable: true,
+
+	  label: {
+	    position: {
+	      x: 4,
+	      y: 3
+	    },
+	    text: 'test'
+	  }
+	} );
+
+	shape.setData( 'pos', {
+	  x: 10
+	} );
+	shape.setData( 'pos2', {
+	  x: 2
+	} );
+	shape.setData( 'posCenter', {
+	  x: 3
+	} );
+
+	shape.setY( 20 );
+
+	shape.draw();
+
+	graphinstance.redraw();
+	graphinstance.drawSeries();
 	});
