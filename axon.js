@@ -12,7 +12,7 @@
 	Plotly.plot( graphDiv, [{
 		x: data_x,
 		y: data_y }], {
-		margin: { t: 0 }
+		margin: {l: 40, b: 40, t: 60}
 	});
 
 	//poll gyro
