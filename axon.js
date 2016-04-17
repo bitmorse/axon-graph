@@ -2,7 +2,7 @@
 
 	//call the UI page "home"
 
-	App.load('home');
+//	App.load('home');
 
 
 
