@@ -4,7 +4,8 @@
 
 	App.load('home');
 
-	var data_x, data_y;
+	var data_x = [];
+	var data_y = [];
 
 TESTER = document.getElementById('mygraph');
 
@@ -18,7 +19,7 @@ TESTER = document.getElementById('mygraph');
 			data_y.push(3);
 
 		});
-		
+
 		Plotly.plot( TESTER, [{
 		x: data_x,
 		y: data_y }], {
