@@ -4,7 +4,7 @@
 
 //	App.load('home');
 
-TESTER = document.getElementById('tester');
+TESTER = document.getElementById('mygraph');
 	Plotly.plot( TESTER, [{
 	x: [1, 2, 3, 4, 5],
 	y: [1, 2, 4, 8, 16] }], {
