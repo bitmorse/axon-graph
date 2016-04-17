@@ -1,7 +1,6 @@
 (function(){
 
 	//call the UI page "home"
-	App.load('home');
 
 		(function ( domGraph ) {
 
@@ -28,6 +27,8 @@
 
 
 			})( "graph" );
+
+	App.load('home');
 
 	//poll gyro
 	setInterval(function(){
