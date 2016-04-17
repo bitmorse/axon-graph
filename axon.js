@@ -12,8 +12,15 @@
 	Plotly.plot( graphDiv, [{
 		x: data_x,
 		y: data_y }],
-		{margin: {r:0, l: 0, b: 0, t: 0},
-		title: 'rate of rot in x'});
+		{
+			margin: {r:0, l: 0, b: 0, t: 0},
+			yaxis: {
+				title: 'rate of rot in x',
+				showline: true,
+				mirror: 'allticks',
+				ticks: 'inside'
+			}
+		});
 
 	//poll gyro
 	setInterval(function(){
