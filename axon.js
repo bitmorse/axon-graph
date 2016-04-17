@@ -4,10 +4,12 @@
 
 	App.load('home');
 
+	var data_x, data_y;
+
 TESTER = document.getElementById('mygraph');
 	Plotly.plot( TESTER, [{
-	x: [1, 2, 3, 4, 5],
-	y: [1, 2, 4, 8, 16] }], {
+	x: data_x,
+	y: data_y }], {
 	margin: { t: 0 } } );
 
 	//poll gyro
@@ -15,7 +17,8 @@ TESTER = document.getElementById('mygraph');
 
 		$.getJSON( "http://localhost:8080/nervousnet-api/raw-sensor-data/Gyroscope", function( data ) {
 
-
+			data_x.push(data_x.length);
+			data_y.push(3);
 
 		});
 
