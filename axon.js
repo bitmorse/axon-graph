@@ -11,9 +11,9 @@
   var graphDiv = document.getElementById('mygraph');
 	Plotly.plot( graphDiv, [{
 		x: data_x,
-		y: data_y }], {
-		margin: {r:0, l: 0, b: 0, t: 0}
-	});
+		y: data_y }],
+		{margin: {r:0, l: 0, b: 0, t: 0},
+		title: 'rate of rot in x'});
 
 	//poll gyro
 	setInterval(function(){
