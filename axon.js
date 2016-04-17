@@ -4,7 +4,7 @@
 
 	App.load('home');
 
-			var graphinstance = new Graph( $('#graph') );
+			var graphinstance = new Graph( $('#mygraph') );
 
 			var data = {
 			  x: 0.5,
