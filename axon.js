@@ -7,12 +7,12 @@
 	var data_x = [];
 	var data_y = [];
 
-TESTER = document.getElementById('mygraph');
-
-		Plotly.plot( TESTER, [{
+  var graphDiv = document.getElementById('mygraph');
+	Plotly.plot( graphDiv, [{
 		x: data_x,
 		y: data_y }], {
-		margin: { t: 0 } } );
+		margin: { t: 0 }
+	});
 
 	//poll gyro
 	setInterval(function(){
@@ -21,6 +21,7 @@ TESTER = document.getElementById('mygraph');
 
 			data_x.push(data_x.length);
 			data_y.push(3);
+			Plotly.redraw(graphDiv);
 
 		});
 
