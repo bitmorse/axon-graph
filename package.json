@@ -1,0 +1,20 @@
+{
+  "author": "Sam Sulaimanov <sam@bitmorse.com>",
+  "license": "MIT",
+  "name": "axon-graph",
+  "title": "Graph Display",
+  "icon":"iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAYpJREFUeJzt3EEKwkAQAMFd8f9f1h+YQA6z2FXnCBKagWQd91rrs57ZDz/PoNf0F2CWAOIEECeAOAHECSBOAHHvG9d4zv9jJkCcAOIEECeAOAHECSBOAHECiBNAnADiBBAngDgBxAkgTgBxe9kLSDMB4gQQJ4A4AcQJIE4AcQKIsxfw/D3IlaPvnwkQJ4A4AcQJIE4AcQKIE0CcAOIEECeAOAHECSBOAHECiBNA3J3fA1ydlx993s1vJkCcAOIEECeAOAHECSBOAHH2AuaN7iWYAHECiBNAnADiBBAngDgBxAkgTgBxAogTQJwA4gQQJ4A4AcSdsBeQ/p++aSZAnADiBBAngDgBxAkgTgBx9gLiTIA4AcQJIE4AcQKIE0CcAOIEECeAOAHECSBOAHECiBNAnADiTtgLYJAJECeAOAHECSBOAHECiBNAnL2AOBMgTgBxAogTQJwA4gQQJ4C4vZz3p5kAcQKIE0CcAOIEECeAOAHE3XkPwB8zAeIEECeAOAHECSBOAHECiPsClrYLEbo+6egAAAAASUVORK5CYII=",
+  "description": "Displays live sensor data in a nice graph.",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitmorse/axon-graph"
+  },
+  "bugs": {
+    "url": "https://github.com/bitmorse/axon-graph/issues"
+  },
+  "keywords": [
+    "axon",
+    "demo"
+  ]
+}
