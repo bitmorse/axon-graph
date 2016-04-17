@@ -15,11 +15,7 @@
 			  data.y.push( Math.sin( i * 0.2 + 0.5 ) );
 			}
 
-			graphinstance.newSerie( "serieTest" )
-			  .setLabel( "My serie" )
-			  .autoAxis()
-			  .setData( data )
-			  .setMarkers();
+			graphinstance.newSerie( "serieTest" ).setLabel( "My serie" ).autoAxis().setData( data ).setMarkers();
 
 			graphinstance.redraw();
 			graphinstance.drawSeries();
