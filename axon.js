@@ -2,9 +2,9 @@
 
 	//call the UI page "home"
 
-		(function ( domGraph ) {
+	App.load('home');
 
-			var graphinstance = new Graph( domGraph );
+			var graphinstance = new Graph( $('#graph') );
 
 			var data = {
 			  x: 0.5,
@@ -25,10 +25,6 @@
 			graphinstance.drawSeries();
 
 
-
-			})( "graph" );
-
-	App.load('home');
 
 	//poll gyro
 	setInterval(function(){
